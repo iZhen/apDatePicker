@@ -1,0 +1,11 @@
+.apdp{position:absolute;background-color:#fff;box-shadow:2px 2px 5px #e3e3e3}.apdp,.apdp *{margin:0;padding:0;font:12px/1.5 \5fae\8f6f\96c5\9ed1,tahoma,arial,\5b8b\4f53}
+.apdp table{border-collapse:collapse;border-spacing:0}.apdp .head{width:240px;border:1px solid #ccc;border-bottom-width:0}.apdp .head div{line-height:30px;vertical-align:baseline;text-align:center;font-weight:bold}
+.apdp .head .prev,.apdp .head .next{display:inline-block;width:30px;height:30px;cursor:pointer}.apdp .head .prev:hover,.apdp .head .next:hover{color:#c00}
+.apdp .head .prev a,.apdp .head .next a{text-decoration:none}.apdp .head .title{display:inline-block;width:180px}.apdp .head .title div{display:inline;margin:0 5px;cursor:pointer}
+.apdp .head .title div:hover{color:#c00}.apdp table{padding:5px;width:100%;border-top:1px solid #ccc;border-left:1px solid #ccc;text-align:center}.apdp th{padding:5px;cursor:default;background-color:#f2fafc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;text-align:center;font-weight:bold}
+.apdp th.week{color:#40aa53}.apdp th.weekend{color:#c00}.apdp td{border-bottom:1px solid #ccc;border-right:1px solid #ccc}.apdp td div{padding:5px;cursor:pointer;text-align:center;font-weight:bold;color:#282928}
+.apdp td div.Sat,.apdp td div.Sun{color:#016cba}.apdp td div.week{color:#40aa53}.apdp td div.outday{color:#9c9c9c}.apdp td div:hover{background-color:#fdefc0;color:#c00}
+.apdp td div.selected{background-color:#e96351;color:#fff}.apdp td div.disabled{cursor:default}.apdp .day td div.week:hover{background-color:#fff;color:#40aa53}
+.apdp .month td div.quarter:hover{background-color:#fff;color:#282928}.apdp .week tr:hover td div{background-color:#fdefc0;color:#c00}.apdp .week tr.selected td div{background-color:#e96351;color:#fff}
+.apdp .week tr.selected td div.week{background-color:#40aa53;color:#fff}.apdp .quarter tr:hover td div{background-color:#fdefc0;color:#c00}.apdp .quarter tr.selected td div{background-color:#e96351;color:#fff}
+.apdp .quarter tr.selected td div.week{background-color:#40aa53;color:#fff}

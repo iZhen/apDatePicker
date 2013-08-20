@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>apDatePicker</title>
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/prettify.css" />
+	<link rel="stylesheet" href="assets/css/apDatePicker.min.css" />
+	<!-- script -->
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/prettify.js"></script>
+	<script src="assets/js/apDatePicker.min.js"></script>
+	<style>
+		* { margin:0; padding:0;}
+		html, body { background-color:#fefefe;}
+		.fn-left { float:left;}
+		body, button, input, select, textarea { font:12px/1.5 \5fae\8f6f\96c5\9ed1,tahoma,arial,\5b8b\4f53;}
+		header { display:block; position:fixed; top:0; left:0; z-index:1001; width:100%; height:80px; margin:0 auto; background-color:#fff; box-shadow:0 2px 5px #a3a3a3; text-align:center;}
+		header h1 { display:block; padding:10px 0; font-size:26px; font-weight:bold; text-shadow: 1px 1px 1px rgba(255,255,255,.8),1px 1px 3px rgba(0,0,0,.5);}
+		header a#btn-GitHub { display:inline-block; color:#282928;}
+		footer { display:block; position:fixed; bottom:0; left:0; z-index:1001; width:100%; height:40px; background-color:#333; text-align:center;}
+		footer p { padding:10px 0; color:#fff;}
+		footer p a { color:#fff;}
+		.container { width:978px; margin:0 auto; padding:80px 0 40px;}
+		.section { display:block; width:978px; height:330px;}
+		.section .section-apdp { width:306px;}
+		.section .section-content { width:642px; margin-left:30px;}
+		h3 { margin:3px 0 5px; padding:4px 10px 3px; border-bottom:1px solid #ccc; font-weight:bold;}
+		input[type='text'] { width:230px; margin-left:32px; padding:4px 5px 3px; background-color:#fff; border:1px solid #ccc;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("#dp-day").apDatePicker({ type:"day", format:"yyyy年mm月dd日", showAlways: true, selectedDate: new Date() });
+			$("#dp-week").apDatePicker({ type:"week", format:"yyyy年 第woy周", showAlways: true, selectedDate: new Date() });
+			$("#dp-month").apDatePicker({ type:"month", format:"yyyy年mm月", showAlways: true, selectedDate: new Date() });
+			$("#dp-quarter").apDatePicker({	type:"quarter", format:"yyyy年 第qq季度", showAlways: true, selectedDate: new Date() });
+			$("#dp-year").apDatePicker({ type:"year", format:"yyyy年", showAlways: true, selectedDate: new Date() });
+
+			$("pre").addClass("prettyprint");
+			prettyPrint();
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<h1>apDatePicker</h1>
+		<a id="btn-GitHub" target="_blank" href="https://github.com/iZhen/apDatePicker">Fork me on GitHub</a>
+	</header>	
+	<div class="container">
+		<div class="section">
+			<h3>Day</h3>
+			<div class="section-apdp fn-left"><input type="text" id="dp-day" /></div>
+			<div class="section-content fn-left">
+			<pre>$("#dp-day").apDatePicker({
+	type:"day", 
+	format:"yyyy年mm月dd日", 
+	showAlways: true, 
+	selectedDate: new Date() 
+});</pre>
+			</div>
+		</div>
+		<div class="section">
+			<h3>Week</h3>
+			<div class="section-apdp fn-left"><input type="text" id="dp-week" /></div>
+			<div class="section-content fn-left">
+			<pre>$("#dp-week").apDatePicker({
+	type:"week", 
+	format:"yyyy年 第woy周", 
+	showAlways: true, 
+	selectedDate: new Date() 
+});</pre>
+			</div>
+		</div>
+		<div class="section">
+			<h3>Month</h3>
+			<div class="section-apdp fn-left"><input type="text" id="dp-month" /></div>
+			<div class="section-content fn-left">
+			<pre>$("#dp-month").apDatePicker({
+	type:"month", 
+	format:"yyyy年mm月", 
+	showAlways: true, 
+	selectedDate: new Date() 
+});</pre>
+			</div>
+		</div>
+		<div class="section">
+			<h3>Quarter</h3>
+			<div class="section-apdp fn-left"><input type="text" id="dp-quarter" /></div>
+			<div class="section-content fn-left">
+			<pre>$("#dp-quarter").apDatePicker({
+	type:"quarter", 
+	format:"yyyy年 第qq季度", 
+	showAlways: true, 
+	selectedDate: new Date() 
+});</pre>
+			</div>
+		</div>
+		<div class="section">
+			<h3>Year</h3>
+			<div class="section-apdp fn-left"><input type="text" id="dp-year" /></div>
+			<div class="section-content fn-left">
+			<pre>$("#dp-year").apDatePicker({
+	type:"year", 
+	format:"yyyy年", 
+	showAlways: true, 
+	selectedDate: new Date() 
+});</pre>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2013, by <a target="_blank" href="https://github.com/iZhen">Zhen</a>.</p>
+	</footer>	
+</body>
+</html>
